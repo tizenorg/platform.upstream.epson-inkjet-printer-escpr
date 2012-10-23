@@ -1,12 +1,5 @@
 <manifest>
 	<request>
-		<domain name="cups"/>
+		<domain name="_"/>
 	</request>
-	<assign>
-		<filesystem path="/usr/lib/cups/filter/epson-escpr-wrapper" label="cups" />
-		<filesystem path="/usr/lib/cups/filter/epson-escpr-wrapper" exec_label="cups" />
-		<filesystem path="/usr/lib/cups/filter/epson-escpr" label="cups" />
-		<filesystem path="/usr/lib/cups/filter/epson-escpr" exec_label="cups" />
-		<filesystem path="/usr/lib/libescpr.so.1.0.0" label="_" />
-	</assign>
 </manifest>
