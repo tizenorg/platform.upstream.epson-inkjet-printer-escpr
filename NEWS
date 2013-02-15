@@ -1,0 +1,216 @@
+NEWS -- an overview of user-visible changes with each release
+
+----------------------------------------------------------------------
+epson-inkjet-printer-escpr-1.2.1                          (2012-09-14)
+----------------------------------------------------------------------
+ * Fixed a problem which the borderless printing except for A4 size failed.
+
+ * Added ppd files of following models
+     - Epson E-360 Series
+     - Epson E-830 Series
+
+----------------------------------------------------------------------
+epson-inkjet-printer-escpr-1.2.0                          (2012-05-21)
+----------------------------------------------------------------------
+ * Added ppd files of following models
+      - Artisan 1430
+      - EP-4004
+      - Epson Stylus Photo 1430
+      - Epson Stylus Photo 1500
+ 
+ * Supported duplex printing for following models
+      - EP-904F
+      - Artisan 837
+      - Epson Stylus Photo PX830
+      - PX-B750F
+      - WP-4520 Series
+      - WP-4521 Series
+      - WP-4525 Series
+      - WP-4511 Series
+      - WP-4515 Series
+      - WP-4540 Series
+      - WP-4545 Series
+      - WP-4530 Series
+      - WP-4531 Series
+      - WP-4533 Series
+      - WP-4535 Series
+      - WP-4590 Series
+      - WP-4592 Series
+      - WP-4595 Series
+      - PX-B700
+      - WP-4010 Series
+      - WP-4011 Series
+      - WP-4015 Series
+      - WP-4020 Series
+      - WP-4023 Series
+      - WP-4025 Series
+      - WP-4090 Series
+      - WP-4091 Series
+      - WP-4092 Series
+      - WP-4095 Series
+      - EP-904A
+      - PX-1600F
+      - WF-7510 Series
+      - WF-7511 Series
+      - WF-7515 Series
+      - PX-1700F
+      - WF-7520 Series
+      - WF-7521 Series
+      - WF-7525 Series
+      - EP-804A
+      - Artisan 730
+      - Epson Stylus Photo TX730
+      - Epson Stylus Photo PX730
+
+----------------------------------------------------------------------
+epson-inkjet-printer-escpr-1.1.2                          (2012-02-29)
+----------------------------------------------------------------------
+ * Added ppd files of following models
+      - WP-4590 Series
+      - WP-4592 Series
+      - WP-4595 Series
+      - WP-4090 Series
+      - WP-4091 Series
+      - WP-4092 Series
+      - WP-4095 Series
+
+----------------------------------------------------------------------
+epson-inkjet-printer-escpr-1.1.1                          (2011-11-11)
+----------------------------------------------------------------------
+ * Fixed a problem which the following printer cannot print out normally.
+      - PX-B700
+      - PX-B750F
+
+ * Fixed the FSF address in the boilerplate comments
+
+ * Provided '1284DeviceID' attributes in the PPD files
+
+ * Added ppd files of following model
+      - WP-4010 Series
+      - WP-4023 Series
+      - WP-4520 Series
+      - WP-4533 Series
+
+----------------------------------------------------------------------
+epson-inkjet-printer-escpr-1.1.0                          (2011-09-01)
+----------------------------------------------------------------------
+ * Enabled to build on non-LSB environment
+
+ * Supported 300dpi resolution
+
+ * Added ppd files of following model
+      - E-350
+      - E-820
+      - EP-704A
+      - EP-774A
+      - EP-804A
+      - EP-904A
+      - EP-904F
+      - PX-404A
+      - PX-434A
+      - PX-504A
+      - PX-B700
+      - PX-B750F
+      - PX-1600F
+      - PX-1700F
+      - PictureMate PM 245
+      - Artisan 635
+      - Artisan 730
+      - Artisan 837
+      - WorkForce 435
+      - WorkForce 545
+      - WorkForce 845
+      - WorkForce 645
+      - Epson Stylus Office BX305 Plus
+      - Epson Stylus Office BX535WD
+      - Epson Stylus Office BX935FWD
+      - Epson Stylus Office BX630FW
+      - Epson Stylus Office BX635FWD
+      - Epson Stylus Photo PX830
+      - Epson Stylus Photo TX730
+      - Epson Stylus Photo PX730
+      - Epson Stylus NX530
+      - Epson Stylus NX635
+      - Epson Stylus SX535WD
+      - Epson ME OFFICE 940FW
+      - WP-4011 Series
+      - WP-4015 Series
+      - WP-4020 Series
+      - WP-4025 Series
+      - WP-4511 Series
+      - WP-4515 Series
+      - WP-4521 Series
+      - WP-4525 Series
+      - WP-4530 Series
+      - WP-4531 Series
+      - WP-4535 Series
+      - WP-4540 Series
+      - WP-4545 Series
+      - WF-7510 Series
+      - WF-7511 Series
+      - WF-7515 Series
+      - WF-7520 Series
+      - WF-7521 Series
+      - WF-7525 Series
+
+----------------------------------------------------------------------
+epson-inkjet-printer-escpr-1.0.4                          (2011-06-21)
+----------------------------------------------------------------------
+ * Fixed a problem which streched printout when switching 
+   to monochrome mode.
+ 
+
+----------------------------------------------------------------------
+epson-inkjet-printer-escpr-1.0.3                          (2011-05-24)
+----------------------------------------------------------------------
+ * Remove GraphicsMagick Image Processing System
+
+ * Add ppd files of following model
+     - Epson Stylus SX230
+     - Epson ME OFFICE 530
+     - Epson Stylus TX235
+     - Epson Stylus NX230
+     - Epson Stylus TX230
+     - Epson Stylus SX235
+     - NX230 TX230
+     - PX-7V
+     - Epson Stylus Photo R2000
+     - K300
+     - Epson Stylus NX330
+     - Epson Stylus SX430
+     - Epson ME OFFICE 570
+     - Epson Stylus TX430
+     - Epson Stylus NX430
+     - Epson Stylus SX440
+     - NX430 TX435
+
+----------------------------------------------------------------------
+epson-inkjet-printer-escpr-1.0.2                          (2011-03-08)
+----------------------------------------------------------------------
+ * Add ppd files of following model
+     - PX-5V
+     - Epson Stylus Photo R3000
+     - E-340
+     - K200
+
+ * Update all ppd files because of missing "*CloseUI: *Ink" 
+
+----------------------------------------------------------------------
+epson-inkjet-printer-escpr-1.0.1                          (2010-09-03)
+----------------------------------------------------------------------
+ * Change Paper ID
+	LGL --> Legal
+	Index8 --> 8x10
+
+ * Include ppd files of following model
+    - 2005 - 2007 model
+    - 2010 model
+
+ * Update ppd files of following model
+    - 2008 2009 model 
+
+----------------------------------------------------------------------
+epson-inkjet-printer-escpr-1.0.0                          (2009-03-13)
+----------------------------------------------------------------------
+ * Release new version
+
