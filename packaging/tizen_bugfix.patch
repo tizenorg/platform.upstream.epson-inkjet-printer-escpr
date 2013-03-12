@@ -1,0 +1,87 @@
+diff -urN epson-inkjet-printer-escpr.orig/src/filter.c epson-inkjet-printer-escpr/src/filter.c
+--- epson-inkjet-printer-escpr.orig/src/filter.c	2012-09-13 18:23:42.000000000 +0900
++++ epson-inkjet-printer-escpr/src/filter.c	2012-09-24 16:00:51.000000000 +0900
+@@ -40,6 +40,7 @@
+ #include "epson-escpr-api.h"
+ #include "epson-escpr-services.h"
+ #include "epson-escpr-mem.h"
++#include <signal.h>
+ 
+ #include "err.h"
+ #include "mem.h"
+@@ -276,6 +277,19 @@
+ 	//ESCPR_PRINT_JOB printJob;
+ 	ESCPR_BANDBMP bandBmp;
+ 	ESCPR_RECT bandRect;
++#if defined(HAVE_SIGACTION) && !defined(HAVE_SIGSET)
++  struct sigaction action;      /* Actions for POSIX signals */
++#endif /* HAVE_SIGACTION && !HAVE_SIGSET */
++
++#ifdef HAVE_SIGSET
++  sigset(SIGPIPE, SIG_IGN);
++#elif defined(HAVE_SIGACTION)
++  memset(&action, 0, sizeof(action));
++  action.sa_handler = SIG_IGN;
++  sigaction(SIGPIPE, &action, NULL);
++#else
++  signal(SIGPIPE, SIG_IGN);
++#endif /* HAVE_SIGSET */
+ 	
+ ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+ 	memset (&jobAttr, 0, sizeof(jobAttr));
+diff -urN epson-inkjet-printer-escpr.orig/src/wrapper.c epson-inkjet-printer-escpr/src/wrapper.c
+--- epson-inkjet-printer-escpr.orig/src/wrapper.c	2012-09-13 18:23:42.000000000 +0900
++++ epson-inkjet-printer-escpr/src/wrapper.c	2012-09-24 16:03:06.000000000 +0900
+@@ -112,6 +112,10 @@
+ 	cups_page_header_t header; /* page device dictionary header */
+ 	filter_option_t fopt;
+ 
++#if defined(HAVE_SIGACTION) && !defined(HAVE_SIGSET)
++  struct sigaction action;      /* Actions for POSIX signals */
++#endif /* HAVE_SIGACTION && !HAVE_SIGSET */
++
+ /* attach point */
+ #ifdef USE_DEBUGGER
+ 	int flag = 1;
+@@ -235,8 +239,10 @@
+ 		
+ 		free (image_raw);
+ 	}
+-	
+-	pclose (pfp);
++
++	if (pfp !=NULL){
++		pclose (pfp);
++	}
+ 	cupsRasterClose (ras);
+ 	return 0;
+ }
+@@ -403,21 +409,17 @@
+ {
+ 
+ #ifdef HAVE_SIGSET /* Use System V signals over POSIX to avoid bugs */
+-	sigset (SIGTERM, sigterm_handler);
++  sigset(SIGPIPE, SIG_IGN);
+ #elif defined(HAVE_SIGACTION)
+-        {
+-          struct sigaction action;
+-
+-          memset (&action, 0, sizeof(action));
+-
+-          sigemptyset (&action.sa_mask);
+-          action.sa_handler = sigterm_handler;
+-          sigaction (SIGTERM, &action, NULL);
+-        }
++  memset(&action, 0, sizeof(action));
++  action.sa_handler = SIG_IGN;
++  sigaction(SIGPIPE, &action, NULL);
+ #else
+-	signal (SIGTERM, sigterm_handler);
++  signal(SIGPIPE, SIG_IGN);
+ #endif /* HAVE_SIGSET */
+ 
++
++
+   return;
+ }
+ 

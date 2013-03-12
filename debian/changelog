@@ -1,0 +1,184 @@
+epson-inkjet-printer-escpr (1.2.2-1slp2) unstable; urgency=low
+
+  * Upgraded to 1.2.2-1
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.2.2-1slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Mon, 26 Nov 2012 16:49:30 +0900
+
+epson-inkjet-printer-escpr (1.2.1-2slp2) unstable; urgency=low
+
+  * Added license file
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.2.1-2slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Thu, 11 Oct 2012 18:50:26 +0900
+
+epson-inkjet-printer-escpr (1.2.1-1slp2) unstable; urgency=low
+
+  * Fixed borderless printing bug
+  * Added support for E-360 Series, E-830
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.2.1-1slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Mon, 24 Sep 2012 15:08:49 +0900
+
+epson-inkjet-printer-escpr (1.2.0-13slp2) unstable; urgency=low
+
+  * Fixed smack manifest file
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.1.2-13slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Mon, 24 Sep 2012 13:41:46 +0900
+
+epson-inkjet-printer-escpr (1.2.0-12slp2) unstable; urgency=low
+
+  * Enabled smack manifest file
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.1.2-12slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Fri, 21 Sep 2012 14:11:07 +0900
+
+epson-inkjet-printer-escpr (1.2.0-11slp2) unstable; urgency=low
+
+  * Updated to epson-inkjet-printer-escpr 1.2.0
+  * Added ppd files of following models
+      - Artisan 1430
+      - EP-4004
+      - Epson Stylus Photo 1430
+      - Epson Stylus Photo 1500
+  * Supported duplex printing for following models
+      - EP-904F
+      - Artisan 837
+      - Epson Stylus Photo PX830
+      - PX-B750F
+      - WP-4520 Series
+      - WP-4521 Series
+      - WP-4525 Series
+      - WP-4511 Series
+      - WP-4515 Series
+      - WP-4540 Series
+      - WP-4545 Series
+      - WP-4530 Series
+      - WP-4531 Series
+      - WP-4533 Series
+      - WP-4535 Series
+      - WP-4590 Series
+      - WP-4592 Series
+      - WP-4595 Series
+      - PX-B700
+      - WP-4010 Series
+      - WP-4011 Series
+      - WP-4015 Series
+      - WP-4020 Series
+      - WP-4023 Series
+      - WP-4025 Series
+      - WP-4090 Series
+      - WP-4091 Series
+      - WP-4092 Series
+      - WP-4095 Series
+      - EP-904A
+      - PX-1600F
+      - WF-7510 Series
+      - WF-7511 Series
+      - WF-7515 Series
+      - PX-1700F
+      - WF-7520 Series
+      - WF-7521 Series
+      - WF-7525 Series
+      - EP-804A
+      - Artisan 730
+      - Epson Stylus Photo TX730
+      - Epson Stylus Photo PX730
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.2.0-11slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Tue, 31 Jul 2012 10:21:26 +0900
+
+epson-inkjet-printer-escpr (1.1.2-10slp2) unstable; urgency=low
+
+  * Fixed Jira defect(S1-5993) - Added null check routine
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.1.2-10slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Sat, 28 Jul 2012 10:45:01 +0900
+
+epson-inkjet-printer-escpr (1.1.2-9slp2) unstable; urgency=low
+
+  * Update version for submitting to SLP:Main as correct SR note
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.1.2-9slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Fri, 27 Jul 2012 13:34:02 +0900
+
+epson-inkjet-printer-escpr (1.1.2-8slp2) unstable; urgency=low
+
+  * Changed epson filter to ignore SIGPIPE
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.1.2-8slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Thu, 26 Jul 2012 23:01:51 +0900
+
+epson-inkjet-printer-escpr (1.1.2-7slp2) unstable; urgency=low
+
+  * deleted static library symbolic link
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.1.2-7slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Wed, 11 Jul 2012 21:56:31 +0900
+
+epson-inkjet-printer-escpr (1.1.2-6slp2) unstable; urgency=low
+
+  * Updated manifest for maintaining and disabled manifest
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.1.2-6slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Tue, 26 Jun 2012 20:34:37 +0900
+
+epson-inkjet-printer-escpr (1.1.2-5slp2) unstable; urgency=low
+
+  * Modified spec file for obs packaging
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.1.2-5slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Wed, 09 May 2012 16:45:13 +0900
+
+epson-inkjet-printer-escpr (1.1.2-4slp2) unstable; urgency=low
+
+  * changed maintainer
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.1.2-4slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Thu, 26 Apr 2012 16:48:48 +0900
+
+epson-inkjet-printer-escpr (1.1.2-3slp2) unstable; urgency=low
+
+  * fixed spec file not to installl ppd file
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.1.2-3slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Thu, 26 Apr 2012 13:46:30 +0900
+
+epson-inkjet-printer-escpr (1.1.2-2slp2) unstable; urgency=low
+
+  * fixed spec file for rpm building
+  * changed not to install ppd file
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.1.2-2slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Wed, 25 Apr 2012 18:31:23 +0900
+
+epson-inkjet-printer-escpr (1.1.2-1slp2) unstable; urgency=low
+
+  * initial commit for slp
+  * Git: slp/pkgs/e/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.1.2-1slp2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Wed, 25 Apr 2012 16:19:58 +0900
+
+epson-inkjet-printer-escpr (1.1.2-1) unstable; urgency=low
+
+  * Please refer to ./NEWS
+
+ -- Seiko Epson Corporation <linux-printer@epson.jp>  Fri, 09 Feb 2012 15:25:19 +0900
+

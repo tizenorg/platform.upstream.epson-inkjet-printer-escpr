@@ -1,0 +1,8 @@
+<manifest>
+	<request>
+		<domain name="cups"/>
+	</request>
+	<assign>
+		<filesystem path="/usr/lib/libescpr.so.1.0.0" label="_" />
+	</assign>
+</manifest>
