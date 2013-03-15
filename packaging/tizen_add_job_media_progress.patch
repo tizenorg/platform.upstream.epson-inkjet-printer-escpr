@@ -1,0 +1,17 @@
+diff -urN epson-inkjet-printer-escpr.orig/src/wrapper.c epson-inkjet-printer-escpr/src/wrapper.c
+--- epson-inkjet-printer-escpr.orig/src/wrapper.c	2013-01-10 20:10:44.098990466 +0900
++++ epson-inkjet-printer-escpr/src/wrapper.c	2013-01-10 20:08:28.734990482 +0900
+@@ -231,6 +231,10 @@
+ 				debug_msg("fwrite error");
+ 				return 8;
+ 			}
++            if ((i & 127) == 0)
++            {
++                fprintf(stderr, "ATTR: job-media-progress=%d\n", 100 * i / header.cupsHeight);
++            }
+ 		}
+-		
++
+ 		free (image_raw);
+ 	}
+ 

@@ -1,0 +1,32 @@
+diff -urN epson-inkjet-printer-escpr.orig/src/wrapper.c epson-inkjet-printer-escpr/src/wrapper.c
+--- epson-inkjet-printer-escpr.orig/src/wrapper.c	2013-01-29 08:47:03.470762954 +0900
++++ epson-inkjet-printer-escpr/src/wrapper.c	2013-01-29 08:51:12.762758216 +0900
+@@ -111,7 +111,7 @@
+ 	cups_raster_t *ras;	/* raster stream for printing */
+ 	cups_page_header_t header; /* page device dictionary header */
+ 	filter_option_t fopt;
+-
++	int Page;		/*  current page number */
+ #if defined(HAVE_SIGACTION) && !defined(HAVE_SIGSET)
+   struct sigaction action;      /* Actions for POSIX signals */
+ #endif /* HAVE_SIGACTION && !HAVE_SIGSET */
+@@ -183,8 +183,10 @@
+ 	}
+ 
+ 	pfp = NULL;
++	Page = 0;
+ 	while (cupsRasterReadHeader (ras, &header) && !cancel_flg)
+ 	{
++		Page++;
+ 		int image_bytes;
+ 		char *image_raw;
+ 		int write_size = 0;
+@@ -218,7 +220,7 @@
+ 
+ 		image_bytes = WIDTH_BYTES(header.cupsBytesPerLine * 8);
+ 		image_raw = (char *)calloc (sizeof (char), image_bytes);
+-
++		fprintf(stderr, "PAGE: %d %d\n", Page, header.NumCopies);
+ 		for (i = 0; i < header.cupsHeight && !cancel_flg; i ++)
+ 		{
+ 			if (!cupsRasterReadPixels (ras, (unsigned char*)image_raw, header.cupsBytesPerLine))

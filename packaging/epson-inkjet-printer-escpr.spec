@@ -22,7 +22,7 @@
 
 Name: epson-inkjet-printer-escpr
 Version: 1.2.2
-Release: 2
+Release: 3
 Source0: %{name}-%{version}.tar.gz
 License: GPL
 Vendor: Seiko Epson Corporation
@@ -35,6 +35,8 @@ Group: Applications/System
 Summary: Epson Inkjet Printer Driver (ESC/P-R) for Linux
 # Bug fix for Tizen
 Patch0: tizen_bugfix.patch
+Patch1: tizen_add_job_media_progress.patch
+Patch2: tizen_report_page_info.patch
 
 %description
 This software is a filter program used with Common UNIX Printing
@@ -50,6 +52,8 @@ http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
+%patch2 -p1
 
 %build
 %configure \
@@ -82,6 +86,6 @@ rm -rf ${RPM_BUILD_ROOT}
 /usr/share/license/%{name}
 %{cupsfilterdir}/epson-escpr
 %{cupsfilterdir}/epson-escpr-wrapper
-%{_libdir}/libescpr.so*
+%attr(644,-,-) %{_libdir}/libescpr.so*
 %exclude %{_libdir}/libescpr.la
 %exclude %{cupsppddir}

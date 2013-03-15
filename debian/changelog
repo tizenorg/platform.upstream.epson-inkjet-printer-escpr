@@ -1,3 +1,19 @@
+epson-inkjet-printer-escpr (1.2.2-3) unstable; urgency=low
+
+  * Fixed to report PAGE before job-media-progress
+  * Git: external/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.2.2-3
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Tue, 29 Jan 2013 09:18:10 +0900
+
+epson-inkjet-printer-escpr (1.2.2-2) unstable; urgency=low
+
+  * Fixed to report job media progress
+  * Git: external/epson-inkjet-printer-escpr
+  * Tag: epson-inkjet-printer-escpr_1.2.2-2
+
+ -- GangHeok Kim <gangheok.kim@samsung.com>  Thu, 10 Jan 2013 20:16:29 +0900
+
 epson-inkjet-printer-escpr (1.2.2-1slp2) unstable; urgency=low
 
   * Upgraded to 1.2.2-1
