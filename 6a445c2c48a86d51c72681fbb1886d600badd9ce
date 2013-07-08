@@ -1,0 +1,8 @@
+Change-Id: I6a445c2c48a86d51c72681fbb1886d600badd9ce
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:40:53 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4727
+Project: platform/upstream/epson-inkjet-printer-escpr
+Branch: refs/heads/tizen
