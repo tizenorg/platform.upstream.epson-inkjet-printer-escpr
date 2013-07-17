@@ -24,6 +24,7 @@ Name: epson-inkjet-printer-escpr
 Version: 1.2.2
 Release: 3
 Source0: %{name}-%{version}.tar.gz
+Source1001:	%{name}.manifest
 License: GPL
 Vendor: Seiko Epson Corporation
 URL: http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
@@ -51,6 +52,7 @@ http://download.ebz.epson.net/dsc/search/01/search/?OSC=LX
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
@@ -80,7 +82,7 @@ make clean
 rm -rf ${RPM_BUILD_ROOT}
 
 %files
-%manifest epson-inkjet-printer-escpr.manifest
+%manifest %{name}.manifest
 %defattr(-,root,root)
 #%doc AUTHORS COPYING NEWS README README.ja
 /usr/share/license/%{name}
