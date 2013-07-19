@@ -1,0 +1,8 @@
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Code-Review+2: Patrick McCarty <patrick.mccarty@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Fri, 19 Jul 2013 15:25:55 -0700
+Reviewed-on: https://review.tizen.org/gerrit/5848
+Project: platform/upstream/epson-inkjet-printer-escpr
+Branch: refs/heads/tizen
