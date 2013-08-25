@@ -1,0 +1,8 @@
+* Sun Aug 25 2013 Chengwei Yang <chengwei.yang@intel.com> accepted/tizen/20130710.220744@7b25199
+- Fix manifests
+- resetting manifest requested domain to floor
+- 1. latest code was applied to git repository but not applied to OBS project  - pushed empty git commit
+- merge with master
+- Tizen 2.1 base
+- Initial empty repository
+
